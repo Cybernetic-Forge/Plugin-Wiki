@@ -5,7 +5,9 @@ description:  QuickStocks Commands Overview
 ---
 
 ## Command-List
+
 ### Company Commands
+
 | Command                                                 | Description                                                                                     | 
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | `/company create <name>`                                | Create a company to start your economical journey.                                              |
@@ -37,7 +39,10 @@ description:  QuickStocks Commands Overview
 | `/company salary setplayer <company> <player> <amount>` | Give your employee a special agreement on salary payment. It will override the job-salary.      |
 | `/company salary removeplayer <company> <player> `      | Remove the special agreement from your employee.                                                |
 
+---
+
 ### Market & Watchlist Commands
+
 | Command                            | Description                                    | 
 |------------------------------------|------------------------------------------------|
 | `/market [browse]`                 | Open the market gui to trade.                  |
@@ -52,10 +57,15 @@ description:  QuickStocks Commands Overview
 | `/watchlist info <symbol>`         | Check if a trade is on your watchlist.         |
 | `/watchlist reset`                 | Clear your watchlist to restructure yourself.  |
 
+--- 
+
 ### Wallet Commands
 | Command                         | Description                                       | 
 |---------------------------------|---------------------------------------------------|
 | `/wallet [balance]`             | Show your current amount of money.                |
 | `/wallet add <amount> <player>` | [Admin] Give a player a specific amount of money. |
 | `/wallet set <amount> <player>` | [Admin] Set the players amount of money.          |
+
+---
+
 ### Crypto Commands
