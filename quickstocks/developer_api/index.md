@@ -10,19 +10,27 @@ The Developer API allows you to hook into QuickStocks and customize your experie
 ---
 
 ### Repository
-+++ Maven
 
-```
+<div class="tab-container">
+  <div class="tab-buttons">
+    <button class="tab-button">Maven</button>
+    <button class="tab-button">Gradle</button>
+  </div>
+  <div class="tab-content">
+
+```xml
 empty
 ```
 
-+++ Gradle
+  </div>
+  <div class="tab-content">
 
-```
+```gradle
 empty
 ```
 
-+++
+  </div>
+</div>
 
 --- 
 

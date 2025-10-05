@@ -8,6 +8,12 @@ url: "https://cybernetic-forge.github.io" # the base hostname & protocol for you
 theme: jekyll-theme-cayman
 markdown: kramdown
 
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
+
 # Exclude from processing
 exclude:
   - Gemfile
