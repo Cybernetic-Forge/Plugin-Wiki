@@ -36,6 +36,14 @@ To contribute to the documentation:
 4. Test your changes locally
 5. Submit a pull request
 
+### Documentation Features
+
+This wiki supports:
+- **Tables**: Use standard GitHub Flavored Markdown table syntax
+- **Tabs**: Use HTML tab containers for organizing content (see `TAB_USAGE.md` for details)
+- **Code Blocks**: Syntax highlighting for multiple languages
+- **Custom Styling**: Cyberpunk-themed design with professional aesthetics
+
 ## 🚀 Deployment
 
 This wiki is automatically deployed to GitHub Pages using GitHub Actions whenever changes are pushed to the `main` branch.
