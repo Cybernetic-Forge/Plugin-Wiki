@@ -15,17 +15,17 @@ Explore our collection of powerful plugins designed to enhance your experience:
 ### 🔍 NetSearch
 **Focus:** Science<br>
 **Brief Explanation:** Explore the world and search for scientific data with NetSearch. Use this data to explore connections between several substances and become the greatest scientist of the server.<br>
-[Learn more about NetSearch →](/netsearch/)
+[Learn more about NetSearch →](Plugin-Wiki//netsearch/)
 
 ### 📊 QuickStocks
 **Focus:** Economy<br>
 **Brief Explanation:** Create your own company or corporation and go on the market to prove your financial stability. Manage your employees with custom roles, salaries and benefits to simulate a unique economical experience on your server.<br>
-[Learn more about QuickStocks →](/quickstocks/)
+[Learn more about QuickStocks →](/Plugin-Wiki/quickstocks/)
 
 ### 📚 Grimoires
 **Focus:** Culture & Religion<br>
 **Brief Explanation:** Dive into the mystical world of Grimoires. Mainly this plugin offers you to become a writer of books, being able to collaborate together, publish books on a global network. Some addons might even allow you to experience the magical potential of hidden grimoires on the world- some ancient lost books with powers within.<br>
-[Learn more about Grimoires →](/grimoires/)
+[Learn more about Grimoires →](/Plugin-Wiki//grimoires/)
 
 ### 🔗 Integrate each Plugin together
 While each plugin on itself provides a unique experience, the real power comes from integrating them together. For example:

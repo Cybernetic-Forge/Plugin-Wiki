@@ -5,62 +5,56 @@ description: Efficient inventory and stock management
 ---
 
 # QuickStocks <span class="wip-badge">WIP</span>
-
-QuickStocks is a comprehensive inventory management plugin that helps you track, manage, and optimize your stock levels with ease.
-
-## Overview
-
-QuickStocks provides powerful tools for managing inventory across your server, with real-time tracking, automated alerts, and detailed analytics.
-
-## Status
-
 🚧 This plugin is currently under active development. Features and documentation are being continuously updated.
 
-## Key Features (Planned)
 
-- **Real-Time Tracking**: Monitor stock levels in real-time with automatic updates
-- **Smart Alerts**: Get notified when stock levels reach critical thresholds
-- **Analytics Dashboard**: Visualize stock trends and patterns
-- **Multi-Location Support**: Manage inventory across multiple locations
-- **Automated Restocking**: Set rules for automatic inventory replenishment
-- **Import/Export**: Bulk operations for inventory management
+## Overview
+Create your own company or corporation and go on the market to prove your financial stability. Manage your employees with custom roles, salaries and benefits to simulate a unique economical experience on your server.<br>
+
+## Installation
+1. Download the `QuickStocks.jar` from the resource hub.
+2. Place the jar file in your server's `plugins` directory.
+3. Start your server to generate default configuration files.
+4. Stop the server and edit `config.yml` to set up your database and preferences.
+5. Restart the server and verify the plugin is loaded with `/pl` or `/plugins`.
+6. Test the installation by running `/market` in-game.
+
+## Requirements
+- Spigot/Paper 1.21.8+
+- Java 17+
+### Additional Requirements
+- Database: MySQL (MySQL recommended for larger servers)
+- [Vault](https://github.com/milkbowl/Vault) (optional, for economy integration)
+- [ChestShop](https://modrinth.com/plugin/chestshop) (optional, for integrating companies as shop accounts)
 
 ## Documentation Sections
 
-- [Setup Guide](setup/) - Initial setup and configuration
-- [Usage Guide](usage/) - Learn how to use QuickStocks effectively
+- [Commands](setup/) - Initial setup and configuration
+- [Permissions](usage/) - Learn how to use QuickStocks effectively
+- [Developer API](usage/) - Learn how to use QuickStocks effectively
 
-## Requirements
+## Feature Scopes
+### 🏢 Run a Company
+- Create and manage companies with employees, roles, and financial operations. 
+- You can customize your job-roles with specific permission within the company and assign them to your employees. 
+- Companies can go public and sell shares on the market, allowing other players to invest and become shareholders. 
+- Monitor shareholders and ownership to maintain control over your business. 
+- Define salaries for both, role- and player-based agreements that will be payed out in a server-wide payment cycle.
 
-- Server version: 1.0.0 or higher
-- Database: MySQL 8.0+ or PostgreSQL 12+
-- Memory: Minimum 1GB RAM recommended
+In case of using [ChestShop](https://modrinth.com/plugin/chestshop), companies can also be used as shop accounts, allowing them to operate shops on the server through several people.
+### 📊 Trade on the Market
+- Browse stocks, cryptocurrencies, and company shares on the market.
+- View real-time prices and market trends to make informed investment decisions.
+- Build and manage your investment portfolio, tracking performance with profit/loss calculations.
+- Use a watchlist to track your favorite instruments and receive notifications on significant price changes.
 
-## Quick Start
+### 💰 Build Wealth
+- Each player starts with a wallet balance that can be used for trading and investments.
+- Manage your balance, view transaction history, and monitor your overall financial health. (WIP)
+- In case of using [Vault](https://github.com/milkbowl/Vault) integration, players can also directly interact with money from their economy balance to their wallet and vice versa without any manual steps.
 
-```bash
-# Installation and setup coming soon
-# Check back for updates!
-```
-
-## Example Use Cases
-
-### Retail Management
-Track product inventory across multiple store locations with real-time synchronization.
-
-### Warehouse Operations
-Monitor stock levels, manage orders, and optimize warehouse space utilization.
-
-### Resource Tracking
-Keep track of server resources, materials, and items across different regions.
-
-## Benefits
-
-- **Efficiency**: Reduce time spent on manual inventory checks
-- **Accuracy**: Minimize errors with automated tracking
-- **Insights**: Make data-driven decisions with detailed analytics
-- **Scalability**: Handles small to large-scale inventory operations
-
-## Support
-
-For issues and feature requests, please visit our [GitHub Issues](https://github.com/Cybernetic-Forge/Plugin-Wiki/issues) page.
+### 🪙 Create Crypto (WIP)
+- Design custom cryptocurrencies
+- Set unique symbols and names
+- Watch them trade on the market
+- Build server-specific economies

@@ -11,7 +11,7 @@
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
       <div class="sidebar-header">
-        <h2>Plugin Wiki</h2>
+        <h2>Documentation</h2>
       </div>
       <ul class="sidebar-menu">
         <li class="{% if page.url == '/' %}active{% endif %}">
@@ -41,17 +41,22 @@
         <li class="has-submenu {% if page.url contains '/quickstocks' %}active{% endif %}">
           <a href="{{ '/quickstocks/' | relative_url }}">
             <span class="icon">📊</span>
-            <span class="label">QuickStocks (WIP)</span>
+            <span class="label">QuickStocks</span>
           </a>
           <ul class="submenu">
             <li>
-              <a href="{{ '/quickstocks/setup/' | relative_url }}">
+              <a href="{{ '/quickstocks/commands/' | relative_url }}">
+                <span class="label">Commands</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ '/quickstocks/permissions/' | relative_url }}">
                 <span class="label">Setup</span>
               </a>
             </li>
             <li>
-              <a href="{{ '/quickstocks/usage/' | relative_url }}">
-                <span class="label">Usage</span>
+              <a href="{{ '/quickstocks/developer_api/' | relative_url }}">
+                <span class="label">Developer API</span>
               </a>
             </li>
           </ul>
