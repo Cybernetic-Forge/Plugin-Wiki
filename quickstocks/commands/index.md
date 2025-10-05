@@ -60,11 +60,12 @@ description:  QuickStocks Commands Overview
 --- 
 
 ### Wallet Commands
+
 | Command                         | Description                                       | 
 |---------------------------------|---------------------------------------------------|
 | `/wallet [balance]`             | Show your current amount of money.                |
-| `/wallet add <amount> <player>` | [Admin] Give a player a specific amount of money. |
-| `/wallet set <amount> <player>` | [Admin] Set the players amount of money.          |
+| `/wallet add <amount> <player>` | (Admin) Give a player a specific amount of money. |
+| `/wallet set <amount> <player>` | (Admin) Set the players amount of money.          |
 
 ---
 
