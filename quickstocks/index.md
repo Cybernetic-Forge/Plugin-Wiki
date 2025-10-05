@@ -20,7 +20,7 @@ Create your own company or corporation and go on the market to prove your financ
 6. Test the installation by running `/market` in-game.
 
 ## Requirements
-- Spigot/Paper 1.21.8+
+- Spigot/Paper 1.21+
 - Java 17+
 ### Additional Requirements
 - Database: MySQL (MySQL recommended for larger servers)
