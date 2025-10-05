@@ -1,25 +1,35 @@
 ---
 layout: default
 title: Home
+description: Welcome to the Cybernetic Forge Plugin Wiki
 ---
 
-# QuickStocks-Wiki
+# Welcome to the Plugin Wiki
 
-Welcome to the QuickStocks plugin documentation!
+This wiki provides comprehensive documentation for the Cybernetic Forge plugins.
 
-## About
+## Available Plugins
 
-This wiki provides comprehensive documentation for the QuickStocks plugin.
+Explore our collection of powerful plugins designed to enhance your experience:
 
-## Documentation
+### 🔍 NetSearch
+A powerful search plugin that helps you find what you need quickly and efficiently. Currently in development with exciting features coming soon.
 
-Browse the documentation sections to learn more about:
+[Learn more about NetSearch →](/netsearch/)
 
-- Getting Started
-- Configuration
-- Features
-- API Reference
-- Troubleshooting
+### 📊 QuickStocks
+Manage and track your inventory with ease using QuickStocks. A comprehensive solution for stock management and monitoring.
+
+[Learn more about QuickStocks →](/quickstocks/)
+
+### 📚 Grimoires
+Access ancient knowledge and powerful spells through the Grimoires plugin. Your gateway to mystical documentation and magical commands.
+
+[Learn more about Grimoires →](/grimoires/)
+
+## Getting Started
+
+Each plugin has its own dedicated section with detailed documentation, installation guides, and usage examples. Use the sidebar navigation to explore the different plugins and their features.
 
 ## Contributing
 

@@ -1,8 +1,8 @@
 # GitHub Pages Configuration for Plugin-Wiki
-title: QuickStocks-Wiki
-description: Documentation and wiki for QuickStocks plugin
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+title: Cybernetic Forge Plugin Wiki
+description: Documentation and wiki for Cybernetic Forge plugins
+baseurl: "/Plugin-Wiki" # the subpath of your site, e.g. /blog
+url: "https://cybernetic-forge.github.io" # the base hostname & protocol for your site
 
 # Build settings
 theme: jekyll-theme-cayman
