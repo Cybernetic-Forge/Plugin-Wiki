@@ -1,175 +1,200 @@
 ---
 layout: default
 title: QuickStocks Setup
-description: Setup and configure QuickStocks
+description: A comprehensive stock market and company management plugin for Minecraft servers
 ---
 
 # QuickStocks Setup Guide
 
-This guide will help you set up QuickStocks on your server and configure it for your specific needs.
+## 🎯 Quick Navigation
 
-## Prerequisites
+### 🆕 New to QuickStocks?
+Start here to learn the basics and get trading:
+- **[⌨️ Commands Overview](Commands-Overview)** - All available commands
+- **[🔐 Permissions](Permissions)** - Permission system guide
 
-Before setting up QuickStocks, ensure you have:
+### 📦 Installation
+1. Download the `QuickStocks.jar` from the resource hub.
+2. Place the jar file in your server's `plugins` directory.
+3. Start your server to generate default configuration files.
+4. Stop the server and edit `config.yml` to set up your database and preferences.
+5. Restart the server and verify the plugin is loaded with `/pl` or `/plugins`.
+6. Test the installation by running `/market` in-game.
 
-- Server version 1.0.0 or higher
-- MySQL 8.0+ or PostgreSQL 12+
-- At least 1GB of available RAM
-- Administrative access to your server
+### 🎮 For Players
+Learn how to use QuickStocks features:
 
-## Installation
+**Trading & Markets:**
+- [📊 Stocks Commands](Commands-Stocks) - View market data and analyze instruments
+- [📈 Market Commands](Commands-Market) - Buy and sell on the market
+- [👀 Watch Commands](Commands-Watch) - Track your favorite instruments
+- [💰 Wallet Commands](Commands-Wallet) - Manage your balance
 
-### Step 1: Download QuickStocks
+**Advanced Features:**
+- [🏢 Company Commands](Commands-Company) - Create and manage companies
+- [🪙 Crypto Commands](Commands-Crypto) - Create custom cryptocurrencies
+- [📱 Market Device](Commands-MarketDevice) - Portable market access
 
-Download the latest version of QuickStocks from our releases page:
+### 👨‍💼 For Server Administrators
+Setup and maintain your QuickStocks installation:
 
-```bash
-wget https://github.com/Cybernetic-Forge/QuickStocks/releases/latest/quickstocks.jar
-```
+- [📦 Installation Guide](Installation) - Step-by-step setup
+- [⚙️ Configuration Guide](Configuration) - All configuration options
+- [🗄️ Database Management](Database) - Backup, optimize, and troubleshoot
 
-### Step 2: Install Plugin
+---
 
-Place the plugin file in your server's plugins directory:
+## ✨ What Can You Do?
 
-```bash
-mv quickstocks.jar /path/to/server/plugins/
-```
+### 📊 Trade on the Market
+- Browse stocks, cryptocurrencies, and company shares
+- View real-time prices and market trends
+- Build and manage your investment portfolio
+- Track performance with profit/loss calculations
 
-### Step 3: Configure Database
+### 🏢 Run a Company
+- Create companies with custom roles and permissions
+- Manage employees and financial operations
+- Go public and sell shares on the market
+- Monitor shareholders and ownership
 
-Create a database for QuickStocks:
+### 💰 Build Wealth
+- Start with a wallet balance
+- Trade to grow your portfolio
+- Earn from successful investments
+- Create passive income streams
 
-```sql
-CREATE DATABASE quickstocks;
-CREATE USER 'quickstocks'@'localhost' IDENTIFIED BY 'your_password';
-GRANT ALL PRIVILEGES ON quickstocks.* TO 'quickstocks'@'localhost';
-FLUSH PRIVILEGES;
-```
+### 🪙 Create Crypto
+- Design custom cryptocurrencies
+- Set unique symbols and names
+- Watch them trade on the market
+- Build server-specific economies
 
-### Step 4: Initial Configuration
+---
 
-Start your server to generate configuration files. Then edit `plugins/QuickStocks/config.yml`:
+## 🎯 Popular Topics
 
-```yaml
-database:
-  type: mysql
-  host: localhost
-  port: 3306
-  name: quickstocks
-  username: quickstocks
-  password: your_password
+### For Beginners
+1. [How do I start trading?](Getting-Started#step-2-explore-the-market)
+2. [How do I create a company?](Getting-Started#creating-your-first-company)
+3. [What commands are available?](Commands-Overview)
+4. [How do permissions work?](Permissions)
 
-settings:
-  # Enable automatic inventory scanning
-  auto_scan: true
-  
-  # Scan interval in seconds
-  scan_interval: 300
-  
-  # Enable low stock alerts
-  alerts_enabled: true
-```
+### For Traders
+1. [How do I buy stocks?](Commands-Market#-buying-shares)
+2. [How do I track instruments?](Commands-Watch#-adding-to-watchlist)
+3. [How do I view my portfolio?](Commands-Market#-portfolio-management)
+4. [What are trading fees?](Commands-Market#-trading-fees)
 
-## Initial Setup
+### For Company Owners
+1. [How do I go public?](Commands-Company#-market-operations-ipo)
+2. [How do I manage employees?](Commands-Company#-employee-management)
+3. [How do I set permissions?](Commands-Company#-job-management)
+4. [What are company types?](Commands-Company#creating-companies)
 
-### Create Your First Location
+### For Admins
+1. [How do I install?](Installation)
+2. [How do I configure the plugin?](Configuration)
+3. [How do I backup the database?](Database#-backup-strategies)
+4. [How do I set permissions?](Permissions#-permission-setup)
 
-```bash
-# In server console or chat
-/qs location create "Main Warehouse" -x 100 -y 64 -z 200
-```
+---
 
-### Add Items to Track
+## 🎨 Features at a Glance
 
-```bash
-# Add an item to inventory
-/qs item add diamond 64 "Main Warehouse"
+**Market System:**
+- ✅ Real-time price updates every 5 seconds
+- ✅ 25+ market factors affecting prices
+- ✅ Circuit breakers and trading safeguards
+- ✅ Historical price tracking and analytics
 
-# Set low stock threshold
-/qs threshold set diamond 10
-```
+**Company System:**
+- ✅ Three company types (PRIVATE, PUBLIC, DAO)
+- ✅ Role-based employee management
+- ✅ Shared finances and transactions
+- ✅ IPO system for going public
+- ✅ Shareholder tracking and buyout protection
 
-### Configure Alerts
+**Trading Features:**
+- ✅ Interactive market browser GUI
+- ✅ Portfolio management with P&L
+- ✅ Watchlists for tracking instruments
+- ✅ Trade history and analytics
+- ✅ Market Link Device for portable access
 
-```yaml
-alerts:
-  # Low stock threshold percentage
-  low_stock_percent: 20
-  
-  # Alert methods
-  methods:
-    - console
-    - webhook
-    - email
-  
-  # Webhook URL for notifications
-  webhook_url: "https://your-webhook-url.com"
-```
+**Technical:**
+- ✅ SQLite, MySQL, and PostgreSQL support
+- ✅ Automatic database migrations
+- ✅ Vault economy integration
+- ✅ Comprehensive permission system
+- ✅ Tab completion for all commands
 
-## Verification
+---
 
-After setup, verify that QuickStocks is working correctly:
+## 🚀 Getting Started Guides
 
-```bash
-# Check plugin status
-/qs status
+### Quick Start (5 minutes)
+1. [Install the plugin](Installation#-step-2-install-the-plugin)
+2. [Start your server](Installation#-step-2-install-the-plugin)
+3. [Test with `/market`](Commands-Market)
+4. [Create your first company](Getting-Started#creating-your-first-company)
 
-# List all tracked items
-/qs list
+### Complete Setup (30 minutes)
+1. [Installation Guide](Installation) - Full setup process
+2. [Configure database](Configuration#️-database-configuration) - Choose your database
+3. [Set permissions](Permissions#-permission-setup) - Configure access
+4. [Test all features](Installation#-step-6-test-the-installation) - Verify installation
 
-# View location information
-/qs location info "Main Warehouse"
-```
+---
 
-## Common Setup Issues
+## 📚 Documentation Structure
 
-### Database Connection Failed
+This wiki is organized into sections:
 
-- Verify database credentials in config.yml
-- Ensure database server is running
-- Check firewall rules allow database connections
+### Core Documentation
+- **Getting Started** - Introduction and basics
+- **Commands** - Complete command reference
+- **Permissions** - Permission system guide
 
-### Permission Errors
+### Command References
+Each command domain has its own detailed page:
+- Stocks, Crypto, Wallet
+- Market, Watch, Company
+- Market Device
 
-- Verify user has necessary permissions
-- Check file permissions on plugin directory
+### Administration
+Server setup and maintenance:
+- Installation, Configuration
+- Database Management
 
-### Performance Issues
+---
 
-- Increase allocated RAM if needed
-- Adjust scan interval to reduce load
-- Consider disabling auto-scan for large inventories
+## 🆘 Need Help?
 
-## Next Steps
+**Can't find what you're looking for?**
 
-- Learn how to use QuickStocks in the [Usage Guide](../usage/)
-- Return to [QuickStocks Overview](../)
+1. Use the search bar above
+2. Check the [Commands Overview](Commands-Overview)
+3. Browse the sidebar navigation
+4. [Report issues on GitHub](https://github.com/Cybernetic-Forge/QuickStocks/issues)
 
-## Advanced Setup
+**Found a bug?**
+[Open an issue](https://github.com/Cybernetic-Forge/QuickStocks/issues) on GitHub
 
-### Multiple Locations
+---
 
-Configure multiple warehouse locations:
+## 🔗 External Resources
 
-```yaml
-locations:
-  - name: "Main Warehouse"
-    coordinates: [100, 64, 200]
-    capacity: 10000
-    
-  - name: "Storage Room A"
-    coordinates: [150, 64, 250]
-    capacity: 5000
-```
+- **[GitHub Repository](https://github.com/Cybernetic-Forge/QuickStocks)** - Source code and releases
+- **[Issue Tracker](https://github.com/Cybernetic-Forge/QuickStocks/issues)** - Report bugs and request features
+- **[Discord](https://discord.gg/your-invite)** - Community support
 
-### API Access
+---
 
-Enable API for external integrations:
+<p align="center">
+  <strong>Ready to transform your Minecraft economy?</strong><br>
+  <a href="Installation">Install QuickStocks →</a> | <a href="Getting-Started">Getting Started →</a>
+</p>
 
-```yaml
-api:
-  enabled: true
-  port: 8080
-  auth_token: "your-secure-token"
-  rate_limit: 100
-```
+---
+
